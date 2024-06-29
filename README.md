@@ -10,4 +10,8 @@
 6. Click on 'Load unpacked'
 7. Locate `dist/` folder
 
+---
+
+**Add sites in sites.js file before running app**
+
 **I refered 'https://developer.chrome.com/docs/extensions/reference/api'**
