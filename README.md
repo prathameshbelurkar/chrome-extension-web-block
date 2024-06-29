@@ -12,6 +12,4 @@
 
 ---
 
-**Add sites in sites.js file before running app**
-
 **I refered 'https://developer.chrome.com/docs/extensions/reference/api'**
