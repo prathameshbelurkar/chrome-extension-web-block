@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 
-const data = [
-  { siteName: "yahoo", url: "https://yahoo.com", keyword: "yahoo" },
-];
+import data from "./sites";
 
 function App() {
   const [numSites, setNumSites] = useState(data.length);
@@ -41,7 +39,13 @@ function App() {
   return (
     <div className="app-container">
       <h1>Web Blocker</h1>
+
       <p>Blocked sites: {numSites}</p>
+      {data.map((obj) => (
+        <p key={`${obj.url}-${Math.random()}`}>{obj.url}</p>
+      ))}
+
+      <h1>Add Sites</h1>
       <form onSubmit={onSubmit}>
         <div>
           <label htmlFor="siteName">Website name</label>
