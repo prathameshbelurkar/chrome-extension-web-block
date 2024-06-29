@@ -1,12 +1,28 @@
+import { useState, useEffect } from "react";
 import "./App.css";
-import { useState } from "react";
 
 const data = [
   { siteName: "yahoo", url: "https://yahoo.com", keyword: "yahoo" },
 ];
 
 function App() {
-  const [numSites, setNumSites] = useState(0);
+  const [numSites, setNumSites] = useState(data.length);
+
+  useEffect(() => {
+    const currentUrl = window.location.href;
+
+    const siteIsBlocked = data.some((obj) => {
+      const cond =
+        currentUrl.includes(obj.keyword) || currentUrl.includes(obj.url);
+      if (cond) return true;
+      return false;
+    });
+
+    if (siteIsBlocked) {
+      document.body.innerHTML = "This page is blocked.";
+      document.body.style.textAlign = "center";
+    }
+  }, [numSites]);
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -25,7 +41,7 @@ function App() {
   return (
     <div className="app-container">
       <h1>Web Blocker</h1>
-      <p>Currently {numSites} sites are blocked!</p>
+      <p>Blocked sites: {numSites}</p>
       <form onSubmit={onSubmit}>
         <div>
           <label htmlFor="siteName">Website name</label>
