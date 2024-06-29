@@ -10,8 +10,7 @@ Follow these steps to get your development environment set up:
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/)
-- [npm](https://www.npmjs.com/)
+**Make sure you have installed [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/)**
 
 ### Installation
 
