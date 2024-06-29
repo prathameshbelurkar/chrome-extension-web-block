@@ -2,6 +2,8 @@ const sites = [
   { siteName: "yahoo", url: "https://yahoo.com", keyword: "yahoo" },
 ];
 
+const blockedStr = "\n\nThis page is blocked by web blocker.\n\n";
+
 const currentUrl = window.location.href;
 
 const siteIsBlocked = sites.some((obj) => {
@@ -11,6 +13,7 @@ const siteIsBlocked = sites.some((obj) => {
 });
 
 if (siteIsBlocked) {
-  document.body.innerHTML = "This page is blocked.";
+  document.body.innerHTML = blockedStr;
   document.body.style.textAlign = "center";
+  document.body.style.padding = "20%";
 }
