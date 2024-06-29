@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Minimal Manifest",
+  "name": "Web Blocker by Prathamesh",
   "version": "1.0.0",
-  "description": "A basic example extension with only required keys",
+  "description": "Chrome extension for blocking websites",
   "action": {
     "default_title": "Web Blocker",
     "default_popup": "index.html"
