@@ -1,15 +1,57 @@
-# chrome-extension -- Assigment
+# Web Blocker Chrome Extension
 
-## Getting started
+## Introduction
 
-1. Clone repo
-2. cd project dir and `npm install`
-3. `npm run build`
-4. Open chrome and visit "chome://extensions"
-5. Turn on developer tools button at the top
-6. Click on 'Load unpacked'
-7. Locate `dist/` folder
+This Chrome extension allows users to block distracting or unwanted websites, enhancing productivity and focus.
 
----
+## Getting Started
 
-**I refered 'https://developer.chrome.com/docs/extensions/reference/api'**
+Follow these steps to get your development environment set up:
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```sh
+   git clone https://github.com/yourusername/web-blocker-chrome-extension.git
+   ```
+
+2. **Navigate to the project directory:**
+
+   ```sh
+   cd web-blocker-chrome-extension
+   ```
+
+3. **Install the dependencies:**
+
+   ```sh
+   npm install
+   ```
+
+4. **Build the project:**
+   ```sh
+   npm run build
+   ```
+
+### Load the Extension in Chrome
+
+1. Open Chrome and go to `chrome://extensions`.
+
+2. Enable the Developer mode by toggling the switch at the top right corner.
+
+3. Click on the "Load unpacked" button.
+
+4. Locate and select the `dist/` folder in your project directory.
+
+### You're all set!
+
+The Web Blocker extension should now be loaded into Chrome. You can start using it to block unwanted websites.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request with your improvements.
